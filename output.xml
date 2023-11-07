@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231107 15:19:03.296" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231107 16:00:03.422" rpa="false" schemaversion="4">
 <suite id="s1" name="BDD" source="C:\Users\ABHISHEK\PycharmProjects\RobotAutomation\TestCase\BDD.robot">
 <kw name="User is on login page" library="BDD_resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231107 15:19:03.717" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
-<status status="PASS" starttime="20231107 15:19:03.716" endtime="20231107 15:19:20.351"/>
+<msg timestamp="20231107 16:00:03.706" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20231107 16:00:03.705" endtime="20231107 16:00:09.722"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231107 15:19:20.351" endtime="20231107 15:19:20.478"/>
+<status status="PASS" starttime="20231107 16:00:09.722" endtime="20231107 16:00:09.853"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:03.716" endtime="20231107 15:19:20.478"/>
+<status status="PASS" starttime="20231107 16:00:03.705" endtime="20231107 16:00:09.853"/>
 </kw>
 <test id="s1-t1" name="Invalid Login TC1" line="12">
 <kw name="Given Logs in with" library="BDD_resource">
@@ -22,45 +22,45 @@
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:20.480" endtime="20231107 15:19:20.577"/>
+<status status="PASS" starttime="20231107 16:00:09.855" endtime="20231107 16:00:09.927"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:20.578" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20231107 15:19:20.578" endtime="20231107 15:19:20.721"/>
+<msg timestamp="20231107 16:00:09.927" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20231107 16:00:09.927" endtime="20231107 16:00:10.075"/>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:20.721" endtime="20231107 15:19:20.770"/>
+<status status="PASS" starttime="20231107 16:00:10.076" endtime="20231107 16:00:10.138"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:20.771" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20231107 15:19:20.770" endtime="20231107 15:19:20.856"/>
+<msg timestamp="20231107 16:00:10.139" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20231107 16:00:10.138" endtime="20231107 16:00:10.219"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[contains(text(),'Log in')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:20.857" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20231107 15:19:20.856" endtime="20231107 15:19:22.449"/>
+<msg timestamp="20231107 16:00:10.220" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20231107 16:00:10.219" endtime="20231107 16:00:10.753"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:20.479" endtime="20231107 15:19:22.450"/>
+<status status="PASS" starttime="20231107 16:00:09.854" endtime="20231107 16:00:10.753"/>
 </kw>
 <kw name="Then Error message should be displayed" library="BDD_resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Login was unsuccessful.</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231107 15:19:22.468" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
-<status status="PASS" starttime="20231107 15:19:22.451" endtime="20231107 15:19:22.468"/>
+<msg timestamp="20231107 16:00:10.869" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
+<status status="PASS" starttime="20231107 16:00:10.754" endtime="20231107 16:00:10.869"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:22.451" endtime="20231107 15:19:22.468"/>
+<status status="PASS" starttime="20231107 16:00:10.754" endtime="20231107 16:00:10.869"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:20.478" endtime="20231107 15:19:22.469"/>
+<status status="PASS" starttime="20231107 16:00:09.853" endtime="20231107 16:00:10.870"/>
 </test>
 <test id="s1-t2" name="Invalid Login TC2" line="16">
 <kw name="Given Logs in with" library="BDD_resource">
@@ -69,45 +69,45 @@
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:22.471" endtime="20231107 15:19:22.521"/>
+<status status="PASS" starttime="20231107 16:00:10.871" endtime="20231107 16:00:10.913"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:22.522" level="INFO">Typing text 'admi@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20231107 15:19:22.521" endtime="20231107 15:19:22.643"/>
+<msg timestamp="20231107 16:00:10.914" level="INFO">Typing text 'admi@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20231107 16:00:10.913" endtime="20231107 16:00:11.037"/>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:22.643" endtime="20231107 15:19:22.684"/>
+<status status="PASS" starttime="20231107 16:00:11.037" endtime="20231107 16:00:11.079"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:22.684" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20231107 15:19:22.684" endtime="20231107 15:19:22.776"/>
+<msg timestamp="20231107 16:00:11.080" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20231107 16:00:11.079" endtime="20231107 16:00:11.175"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[contains(text(),'Log in')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:22.778" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20231107 15:19:22.777" endtime="20231107 15:19:23.396"/>
+<msg timestamp="20231107 16:00:11.176" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20231107 16:00:11.176" endtime="20231107 16:00:12.531"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:22.470" endtime="20231107 15:19:23.397"/>
+<status status="PASS" starttime="20231107 16:00:10.871" endtime="20231107 16:00:12.531"/>
 </kw>
 <kw name="Then Error message should be displayed" library="BDD_resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Login was unsuccessful.</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231107 15:19:23.411" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
-<status status="PASS" starttime="20231107 15:19:23.398" endtime="20231107 15:19:23.411"/>
+<msg timestamp="20231107 16:00:12.545" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
+<status status="PASS" starttime="20231107 16:00:12.533" endtime="20231107 16:00:12.545"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:23.397" endtime="20231107 15:19:23.411"/>
+<status status="PASS" starttime="20231107 16:00:12.532" endtime="20231107 16:00:12.545"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:22.470" endtime="20231107 15:19:23.412"/>
+<status status="PASS" starttime="20231107 16:00:10.870" endtime="20231107 16:00:12.545"/>
 </test>
 <test id="s1-t3" name="Invalid Login TC3" line="20">
 <kw name="Given Logs in with" library="BDD_resource">
@@ -116,45 +116,45 @@
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:23.414" endtime="20231107 15:19:23.456"/>
+<status status="PASS" starttime="20231107 16:00:12.547" endtime="20231107 16:00:12.591"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:23.458" level="INFO">Typing text 'admi@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20231107 15:19:23.456" endtime="20231107 15:19:23.582"/>
+<msg timestamp="20231107 16:00:12.591" level="INFO">Typing text 'admi@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20231107 16:00:12.591" endtime="20231107 16:00:12.719"/>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:23.582" endtime="20231107 15:19:23.622"/>
+<status status="PASS" starttime="20231107 16:00:12.719" endtime="20231107 16:00:12.759"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:23.624" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20231107 15:19:23.622" endtime="20231107 15:19:23.706"/>
+<msg timestamp="20231107 16:00:12.760" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20231107 16:00:12.759" endtime="20231107 16:00:12.844"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[contains(text(),'Log in')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:23.707" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20231107 15:19:23.706" endtime="20231107 15:19:24.331"/>
+<msg timestamp="20231107 16:00:12.845" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20231107 16:00:12.845" endtime="20231107 16:00:13.379"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:23.413" endtime="20231107 15:19:24.331"/>
+<status status="PASS" starttime="20231107 16:00:12.546" endtime="20231107 16:00:13.379"/>
 </kw>
 <kw name="Then Error message should be displayed" library="BDD_resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Login was unsuccessful.</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231107 15:19:24.346" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
-<status status="PASS" starttime="20231107 15:19:24.332" endtime="20231107 15:19:24.346"/>
+<msg timestamp="20231107 16:00:13.453" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
+<status status="PASS" starttime="20231107 16:00:13.381" endtime="20231107 16:00:13.453"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:24.332" endtime="20231107 15:19:24.346"/>
+<status status="PASS" starttime="20231107 16:00:13.380" endtime="20231107 16:00:13.453"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:23.413" endtime="20231107 15:19:24.346"/>
+<status status="PASS" starttime="20231107 16:00:12.546" endtime="20231107 16:00:13.453"/>
 </test>
 <test id="s1-t4" name="Invalid Login TC4" line="24">
 <kw name="Given Logs in with" library="BDD_resource">
@@ -163,45 +163,45 @@
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:24.349" endtime="20231107 15:19:24.388"/>
+<status status="PASS" starttime="20231107 16:00:13.455" endtime="20231107 16:00:13.498"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:24.388" level="INFO">Typing text '' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20231107 15:19:24.388" endtime="20231107 15:19:24.463"/>
+<msg timestamp="20231107 16:00:13.500" level="INFO">Typing text '' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20231107 16:00:13.498" endtime="20231107 16:00:13.576"/>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:24.463" endtime="20231107 15:19:24.501"/>
+<status status="PASS" starttime="20231107 16:00:13.576" endtime="20231107 16:00:13.618"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:24.501" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20231107 15:19:24.501" endtime="20231107 15:19:24.593"/>
+<msg timestamp="20231107 16:00:13.619" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20231107 16:00:13.618" endtime="20231107 16:00:13.710"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[contains(text(),'Log in')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:24.593" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20231107 15:19:24.593" endtime="20231107 15:19:24.644"/>
+<msg timestamp="20231107 16:00:13.710" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20231107 16:00:13.710" endtime="20231107 16:00:13.759"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:24.348" endtime="20231107 15:19:24.644"/>
+<status status="PASS" starttime="20231107 16:00:13.454" endtime="20231107 16:00:13.759"/>
 </kw>
 <kw name="Then Please enter your email should be displayed" library="BDD_resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Please enter your email</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231107 15:19:24.662" level="INFO">Current page contains text 'Please enter your email'.</msg>
-<status status="PASS" starttime="20231107 15:19:24.645" endtime="20231107 15:19:24.662"/>
+<msg timestamp="20231107 16:00:13.777" level="INFO">Current page contains text 'Please enter your email'.</msg>
+<status status="PASS" starttime="20231107 16:00:13.760" endtime="20231107 16:00:13.778"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:24.644" endtime="20231107 15:19:24.662"/>
+<status status="PASS" starttime="20231107 16:00:13.760" endtime="20231107 16:00:13.778"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:24.347" endtime="20231107 15:19:24.662"/>
+<status status="PASS" starttime="20231107 16:00:13.454" endtime="20231107 16:00:13.778"/>
 </test>
 <test id="s1-t5" name="Invalid Login TC5" line="28">
 <kw name="Given Logs in with" library="BDD_resource">
@@ -210,45 +210,45 @@
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:24.664" endtime="20231107 15:19:24.697"/>
+<status status="PASS" starttime="20231107 16:00:13.780" endtime="20231107 16:00:13.812"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:24.698" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20231107 15:19:24.697" endtime="20231107 15:19:24.830"/>
+<msg timestamp="20231107 16:00:13.813" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20231107 16:00:13.812" endtime="20231107 16:00:13.948"/>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:24.830" endtime="20231107 15:19:24.870"/>
+<status status="PASS" starttime="20231107 16:00:13.948" endtime="20231107 16:00:13.989"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:24.871" level="INFO">Typing text '' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20231107 15:19:24.870" endtime="20231107 15:19:24.951"/>
+<msg timestamp="20231107 16:00:13.991" level="INFO">Typing text '' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20231107 16:00:13.989" endtime="20231107 16:00:14.060"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[contains(text(),'Log in')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:24.951" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20231107 15:19:24.951" endtime="20231107 15:19:25.509"/>
+<msg timestamp="20231107 16:00:14.061" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20231107 16:00:14.060" endtime="20231107 16:00:14.610"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:24.664" endtime="20231107 15:19:25.509"/>
+<status status="PASS" starttime="20231107 16:00:13.779" endtime="20231107 16:00:14.611"/>
 </kw>
 <kw name="Then Error message should be displayed" library="BDD_resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Login was unsuccessful.</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231107 15:19:25.585" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
-<status status="PASS" starttime="20231107 15:19:25.511" endtime="20231107 15:19:25.585"/>
+<msg timestamp="20231107 16:00:14.674" level="INFO">Current page contains text 'Login was unsuccessful.'.</msg>
+<status status="PASS" starttime="20231107 16:00:14.611" endtime="20231107 16:00:14.674"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:25.510" endtime="20231107 15:19:25.585"/>
+<status status="PASS" starttime="20231107 16:00:14.611" endtime="20231107 16:00:14.674"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:24.663" endtime="20231107 15:19:25.585"/>
+<status status="PASS" starttime="20231107 16:00:13.778" endtime="20231107 16:00:14.674"/>
 </test>
 <test id="s1-t6" name="Invalid Login TC6" line="32">
 <kw name="Given Logs in with" library="BDD_resource">
@@ -257,51 +257,51 @@
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:25.589" endtime="20231107 15:19:25.633"/>
+<status status="PASS" starttime="20231107 16:00:14.676" endtime="20231107 16:00:14.722"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Email</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:25.633" level="INFO">Typing text '' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20231107 15:19:25.633" endtime="20231107 15:19:25.705"/>
+<msg timestamp="20231107 16:00:14.723" level="INFO">Typing text '' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20231107 16:00:14.722" endtime="20231107 16:00:14.804"/>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231107 15:19:25.705" endtime="20231107 15:19:25.745"/>
+<status status="PASS" starttime="20231107 16:00:14.804" endtime="20231107 16:00:14.843"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:25.746" level="INFO">Typing text '' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20231107 15:19:25.746" endtime="20231107 15:19:25.825"/>
+<msg timestamp="20231107 16:00:14.844" level="INFO">Typing text '' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20231107 16:00:14.843" endtime="20231107 16:00:14.921"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[contains(text(),'Log in')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231107 15:19:25.826" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
-<status status="PASS" starttime="20231107 15:19:25.825" endtime="20231107 15:19:25.877"/>
+<msg timestamp="20231107 16:00:14.923" level="INFO">Clicking element 'xpath://button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20231107 16:00:14.922" endtime="20231107 16:00:14.970"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:25.587" endtime="20231107 15:19:25.877"/>
+<status status="PASS" starttime="20231107 16:00:14.676" endtime="20231107 16:00:14.970"/>
 </kw>
 <kw name="Then Please enter your email should be displayed" library="BDD_resource">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Please enter your email</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231107 15:19:25.890" level="INFO">Current page contains text 'Please enter your email'.</msg>
-<status status="PASS" starttime="20231107 15:19:25.877" endtime="20231107 15:19:25.890"/>
+<msg timestamp="20231107 16:00:14.984" level="INFO">Current page contains text 'Please enter your email'.</msg>
+<status status="PASS" starttime="20231107 16:00:14.971" endtime="20231107 16:00:14.984"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:25.877" endtime="20231107 15:19:25.890"/>
+<status status="PASS" starttime="20231107 16:00:14.970" endtime="20231107 16:00:14.984"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:25.586" endtime="20231107 15:19:25.891"/>
+<status status="PASS" starttime="20231107 16:00:14.675" endtime="20231107 16:00:14.985"/>
 </test>
 <kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20231107 15:19:25.892" endtime="20231107 15:19:32.152"/>
+<status status="PASS" starttime="20231107 16:00:14.985" endtime="20231107 16:00:21.331"/>
 </kw>
-<status status="PASS" starttime="20231107 15:19:03.298" endtime="20231107 15:19:32.152"/>
+<status status="PASS" starttime="20231107 16:00:03.424" endtime="20231107 16:00:21.331"/>
 </suite>
 <statistics>
 <total>
