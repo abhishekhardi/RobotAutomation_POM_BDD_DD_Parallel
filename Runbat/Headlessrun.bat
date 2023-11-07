@@ -1,2 +1,2 @@
-cd  C:\Users\ABHISHEK\PycharmProjects\RobotAutomation
-robot TestCase\Headless.robot
+cd  C:\Users\ABHISHEK\AppData\Local\Programs\Python\Python311\Scripts
+robot C:\Users\ABHISHEK\PycharmProjects\RobotAutomation\TestCase\Headless.robot
