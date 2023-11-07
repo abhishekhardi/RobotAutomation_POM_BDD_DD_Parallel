@@ -1,0 +1,7 @@
+diff a/Runbat/BDDrun.bat b/Runbat/BDDrun.bat	(rejected hunks)
+@@ -1,2 +0,2 @@
+-cd  C:\Users\ABHISHEK\AppData\Local\Programs\Python\Python311\Scripts
+-robot C:\Users\ABHISHEK\PycharmProjects\RobotAutomation\TestCase\BDD.robot
+\ No newline at end of file
++cd  C:\Users\ABHISHEK\PycharmProjects\RobotAutomation\
++robot TestCase\BDD.robot
